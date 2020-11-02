@@ -128,13 +128,30 @@ html body{
     background-color: #27496d; 
 }
 
+
+
 #taskPort {
     justify-content: center;
+    margin-bottom: 4rem;
+    
 }
 #taskPort > .outputCardFormat > .card-header {
     background-color: #00909e;
     color: white;
 }
 
+#taskPort > .outputCardFormat > .list-group > li {
+    background-color: #00909e;
+    color: white;
+}
+
+#taskPort > .outputCardFormat {
+    background-color: #14274e;
+    
+}
+
+.outputImgCard {
+    margin-bottom: 0.4rem;
+}
 
 /* Card Outputs End */
