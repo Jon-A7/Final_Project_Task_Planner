@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="style.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <title>Hello, world!</title>
+  </head>
+  <body>
+      <div class="container-fluid" id="head">
+          <div class="jumbotron jumbotron-fluid" id="jumbotronFluid">
+                <div class="container">
+                  <h1 class="display-4">Fluid jumbotron</h1>
+                  <p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
+                </div>
+              </div>
+          </div>
+    <!-- Task Form Start -->
+    <div class="container" id="mainSection">
+        <div class="row justify-content-around">
+            <div class="col-md-6">
+                <form id="mainForm" class=".">
+                    <div class="form-row">
+                        <div class="form-group col-md-7">
+                            <label for="inputName">Name</label>
+                            <input type="text" class="form-control" id="inputName" placeholder="Enter name">
+                        </div>
+                        <div class="form-group col-md-7">
+                            <label for="inputDescription">Description</label>
+                            <textarea class="form-control" id="inputDescription" rows="3"  placeholder="Describe your task"></textarea>
+                        </div>
+                        <div class="form-group col-md-7">
+                            <label for="assignedTo">Assigned To</label>
+                            <input type="text" class="form-control" id="assignedTo" placeholder="Joe Bloggs">
+                        </div>
+                        <div class="form-group col-md-7">
+                            <label for="dueDate">Date Due</label>
+                            <input type="date" class="form-control" id="dueDate">
+                        </div>
+                        <div class="form-group col-md-7">
+                            <label for="status">Status</label>
+                            <select name="status" id="status">
+                                <option value="todo">TODO</option>
+                                <option value="inProgress">IN PROGRESS</option>
+                                <option value="review">REVIEW</option>
+                                <option value="done">DONE</option>
+                              </select>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="col-3" id="submitBtn">
+                            <button type="button" class="btn-danger" id="addItemBtn">Submit form</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="col-md-4 border border-dark" id="formOutput">
+                <p></p>
+                <p></p>
+                <p></p>
+            </div>
+        </div>
+    </div>
+    <!-- Task Form End -->
+    
+    <div class="container-fluid" id="taskUI">
+        <div class="row">
+            <div class="col-md-3">
+                <!--Card one Start-->
+                <div class="card">
+                    <img src="images\Task image.png" class="card-img-top" alt="task image">
+                    <div class="card-body">
+                      <h5 class="card-title">Task Planner Card 1</h5>
+                    </div>
+                    <div class="card-body">
+                        <h6 class="card-title">Name</h6>
+                        <input type="text"  class="card-text cardInput cardName" placeholder="Name">
+                    </div>
+                    <div class="card-body">
+                        <h6 class="card-title">Description</h6>
+                        <textarea class="card-text cardInput cardDesc"  rows="2" ></textarea>
+                    </div>
+                    
+                    <div class="card-body">
+                        <h6 class="card-title">Assigned To</h6>
+                        <textarea class="card-text cardInput cardAssigned" rows="2" ></textarea>
+                    </div>
+                    <div class="card-body">
+                        <h6 class="card-title">Date due</h6>
+                        <input type="date"  class="card-text cardInput cardDate">
+                    </div>
+                    <div class="card-body">
+                        <h6 class="card-title">Status</h6>
+                        <select name="status" class="card-text cardInput cardStatus">
+                            <option value="todo">TODO</option>
+                            <option value="inProgress">IN PROGRESS</option>
+                            <option value="review">REVIEW</option>
+                            <option value="done">DONE</option>
+                          </select>
+                    </div>
+                  </div>
+                  <!-- Card One End -->
+            </div>
+            
+        </div>
+         <!-- List of Tasks Start -->
+        <div class="row">
+            <div class="col-md-3">
+                <ul class="list-group">
+                    <li class="list-group-item"> Task 1</li>
+                    <li class="list-group-item">Task 2</li>
+                    <li class="list-group-item">Task 3</li>
+                    <li class="list-group-item">Task 4</li>
+                    <li class="list-group-item">Task 5</li>
+                  </ul>  
+            </div>
+         </div>
+         <!-- List of Tasks End -->
+
+    </div>
+    
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Optional JavaScript -->
+    <script>src = "app.js"</script>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  </body>
+</html>
