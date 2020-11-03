@@ -115,6 +115,12 @@ html body{
     background-color: #14274e;
 }
 
+#taskUI > .inputUiRow > .inputCard > .inputCardFormat {
+    border: none;
+    padding: 0.6rem;
+    background-color: #14274e;
+}
+
 
 /* .card {
     background-color: #dae1e7;
@@ -136,13 +142,22 @@ html body{
     
 }
 #taskPort > .outputCardFormat > .card-header {
-    background-color: #00909e;
-    color: white;
+    background-color: #27496d;
+    color: #ffffff;
 }
 
 #taskPort > .outputCardFormat > .list-group > li {
-    background-color: #00909e;
-    color: white;
+    background-color: #335f8f;
+    color: #dae1e7;
+}
+
+#taskPort > .outputCardFormat > .list-group {
+    border-radius: 7px;
+}
+
+#taskPort > .outputCardFormat > .card-header {
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
 }
 
 #taskPort > .outputCardFormat {
@@ -154,4 +169,16 @@ html body{
     margin-bottom: 0.4rem;
 }
 
+/* Card Outputs End */
+.overlay-effect {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: rgba(259, 67, 95, 0.7);
+    overflow:hidden;
+  }
 /* Card Outputs End */

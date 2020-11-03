@@ -49,11 +49,11 @@
         </div>
         <div class="row">
             <div class="col-md-12">
-                <form id="mainForm" class=".">
+                <form name="inputForm" id="mainForm" class=".">
                     <div class="form-row">
                         <div class="form-group col-md-7">
                             <label for="inputName" class="subheading">Name</label>
-                            <input type="text" class="form-control" id="inputName" placeholder="Enter name">
+                            <input type="text" class="form-control" name ="inputName" id="inputName" placeholder="Enter name">
                         </div>
                         <div class="form-group col-md-7">
                             <label for="inputDescription" class="subheading">Description</label>
@@ -82,6 +82,7 @@
                             <button type="button" class="btn-danger" id="addTask">Add Task</button>
                         </div>
                     </div>
+                    
                 </form>
             </div>
             <!-- <div class="col-md-4 border border-dark" id="formOutput">
@@ -133,8 +134,8 @@
             </div>
             <!-- Task List Start -->
             <div class="col-md-4">
-                <ul class="list-group">
-                    <li class="list-group-item">
+                <ul class="list-group ">
+                    <li class="list-group-item ">
                         <div class="card">
                             <div class="card-body">
                                 <h5 class="card-title">Name of task</h5>
@@ -145,7 +146,7 @@
                     </li>
                     <li class="list-group-item">
                         <div class="card bg-light text-white">
-                            <img src="images\Task image.png" class="card-img" alt="...">
+                            <img src="images\Task image.png" class="card-img " alt="...">
                             <div class="card-img-overlay">
                               <h5 class="card-title">Task 2</h5>
                               <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
@@ -174,9 +175,10 @@
     <div class="card taskCards outputCardFormat">
         <img src="images\Task image.png" class="card-img outputImgCard" alt="...">
         <div class="card-header">
-          Name
+          Task Id
         </div>
         <ul class="list-group list-group-flush">
+          <li class="list-group-item">Name</li>
           <li class="list-group-item">Description</li>
           <li class="list-group-item">Assign To</li>
           <li class="list-group-item">Date due</li>
@@ -186,9 +188,10 @@
       <div class="card taskCards outputCardFormat">
         <img src="images\Task image two.png" class="card-img outputImgCard" alt="...">
         <div class="card-header">
-          Name
+          Task Id
         </div>
         <ul class="list-group list-group-flush">
+          <li class="list-group-item">Name</li>
           <li class="list-group-item">Description</li>
           <li class="list-group-item">Assign To</li>
           <li class="list-group-item">Date due</li>
@@ -198,9 +201,10 @@
       <div class="card taskCards outputCardFormat">
         <img src="images\task-management-hero-banner.png" class="card-img outputImgCard" alt="...">
         <div class="card-header">
-          Name
+          Task Id
         </div>
         <ul class="list-group list-group-flush">
+          <li class="list-group-item">Name</li>
           <li class="list-group-item">Description</li>
           <li class="list-group-item">Assign To</li>
           <li class="list-group-item">Date due</li>
@@ -210,9 +214,10 @@
       <div class="card taskCards outputCardFormat">
         <img src="images\What-is-task-management.jpg" class="card-img outputImgCard" alt="...">
         <div class="card-header">
-          Name
+          Task Id
         </div>
         <ul class="list-group list-group-flush">
+          <li class="list-group-item">Name</li>
           <li class="list-group-item">Description</li>
           <li class="list-group-item">Assign To</li>
           <li class="list-group-item">Date due</li>
@@ -248,10 +253,12 @@
 
 
     <!-- Optional JavaScript -->
-    <script>src = "app.js"</script>
+    <script src ="app.js"></script>
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
   </body>
 </html>
+
+C:\Users\JBIAh\Documents\Generation Tech Talent\Planner App\plannerApp\app.js
