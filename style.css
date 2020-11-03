@@ -25,6 +25,12 @@ html body{
 }
 /* Navbar End */
 
+.mainHeaders {
+    justify-content: center;
+    margin-bottom: 0.7rem;
+    color: #00909e;
+}
+
 /* Jumbotron */
 
 .jumbotron > .container > .display-4 {

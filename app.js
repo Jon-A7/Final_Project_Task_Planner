@@ -48,25 +48,50 @@ let validation = false;
 function validateTaskForm (inputName, inputDesc, inputAssignedTo, inputDate, inputStatus) {
     if ((inputName.length != -1) && (inputName.length > 8)) {
         nameValid = true;
+    } else {
+        nameValid = false;
     } if ((inputDesc.length != -1)&& (inputDesc.length > 20)) {
         descValid = true;
-    } if ((inputAssignedTo.length != -1)&&(inputAssignedTo.length > 8)) {
+    } else {
+        descValid = false;
+    } 
+    if ((inputAssignedTo.length != -1)&&(inputAssignedTo.length > 8)) {
         assignedToValid  = true;
-    } if (inputDate !== "") {
+    } else {
+        assignedToValid = false;
+    }
+    if (inputDate !== "") {
         dueDateValid = true;
-    } if (inputStatus !== "") {
+    } else {
+        dueDateValid = false;
+    }
+    if (inputStatus !== "") {
         statusValid = true;
-    } if (nameValid && descValid && assignedToValid && dueDateValid && dueDateValid && statusValid === true) {
+    } else {
+        statusValid = false;
+    }
+    if (nameValid && descValid && assignedToValid && dueDateValid && dueDateValid && statusValid === true) {
         validation = true;
+    
    
+    } else {
+        validation = false;
     }
     return validation;
+    
+};
+
+function invalidAlert (validation) {
+    if (validation = false) {
+        alert("The task you've entered has some invalid information");
+    }
     
 };
 
 // Now the function is made, I need to call the function with the form button.
 document.getElementById("addTask").addEventListener('click', function() {
     console.log(validateTaskForm(inputName.value, inputDesc.value, inputAssignedTo.value, inputDate.value, inputStatus.value));
+    invalidAlert();
             
 });
 
