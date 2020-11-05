@@ -51,7 +51,17 @@ html body{
 
 /* Jumbotron End */
 
+/* Icon Selector Start */
+
+#icon1 {
+    background-image: url("images\Task pipes.jpg")
+}
+
+/* Icon Selector End */
+
 /* Add Task Form */
+
+
 #mainSection {
     background-color: #14274e;
     border-radius: 10px;
@@ -86,6 +96,38 @@ html body{
     color: #00909e;
 }
 /* Add Task Form End */
+
+/* Task List Start */
+#listOfTasks {
+    background-color: transparent;
+    list-style-type: none;
+    
+}
+
+#listOfTasks > .listItemFormat {
+    background-color: #14274e;
+    color: teal;
+    
+    
+}
+
+#listOfTasks > .listItemFormat > .listCardFormat {
+    /* background-color: b; */
+}
+
+.listImages {
+    /* width: 0.8rem;
+    height: 6rem; */
+}
+
+#listOfTasks > .listItemFormat > .liContainer > .listImgCard > .overlay {
+    background-color: rgba(0, 0, 0, 0.445);
+}
+
+#listOfTasks > .listItemFormat > .liContainer > .listImgCard {
+    border: none;
+}
+/* Task List End */
 
 /* User Input Card */
 .inputUiRow {
@@ -137,7 +179,9 @@ html body{
     width: 18rem;
     border: none;
     padding: 0.6rem;
-    background-color: #27496d; 
+    background-color: #27496d;
+    margin-bottom: 0.7rem;
+    margin-top: 0.4rem; 
 }
 
 
