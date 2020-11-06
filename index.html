@@ -4,19 +4,24 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="style.css">
+    
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <!-- FontAwesome Link -->
+    <script src="https://kit.fontawesome.com/af78987f90.js" crossorigin="anonymous"></script>
     <title>Task Planner</title>
   </head>
   <!-- Nav Bar Start -->
   <nav class="navbar navbar-expand-lg navbar-custom bg-custom navbar-dark">
-    <a class="navbar-brand" href="#">Navbar</a>
+    <i class="fas fa-clipboard-list fa-3x"></i>
+    <a class="navbar-brand" id="logo" href="#">Task Planner</a>
+
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav">
+      <!-- <ul class="navbar-nav">
         <li class="nav-item active">
           <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
         </li>
@@ -29,7 +34,7 @@
         <li class="nav-item">
           <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
         </li>
-      </ul>
+      </ul> -->
     </div>
   </nav>
   <!-- Nav Bar End -->
@@ -52,8 +57,8 @@
                 <form name="inputForm" id="mainForm" class=".">
                     <div class="form-row">
                       <div class="form-group col-md-7">
-                        <label for="inputIcon" class="subheading">Icon</label>
-                            <select name="inputIcon" class="form-control" id="inputIcon">
+                        <!-- <label for="inputIcon" class="subheading">Icon</label> -->
+                            <!-- <select name="inputIcon" class="form-control" id="inputIcon">
                                 <option value ="icon1" id ="icon1">Icon 1</option>
                                 <option value ="icon2" id ="icon2">Icon 2</option>
                                 <option value ="icon3" id ="icon3">Icon 3</option>
@@ -62,7 +67,7 @@
                                 <option value ="icon6" id ="icon6">Icon 6</option>
                                 <option value ="icon7" id ="icon7">Icon 7</option>
                                 <option value ="icon8" id ="icon8">Icon 8</option>
-                              </select>
+                              </select> -->
                     </div>
                         <div class="form-group col-md-7">
                             <label for="inputName" class="subheading">Name</label>
@@ -83,16 +88,16 @@
                         <div class="form-group col-md-7">
                             <label for="status" class="subheading">Status</label>
                             <select name="status" class="form-control" id="status">
-                                <option value="todo">TODO</option>
-                                <option value="inProgress">IN PROGRESS</option>
-                                <option value="review">REVIEW</option>
-                                <option value="done">DONE</option>
+                                <option value="To Do">TODO</option>
+                                <option value="In Progress">IN PROGRESS</option>
+                                <option value="Review">REVIEW</option>
+                                <option value="Done">DONE</option>
                               </select>
                         </div>
                     </div>
                     <div class="form-row">
                         <div class="col-3" id="addTaskBtn">
-                            <button type="button" class="btn-danger" id="addTask">Add Task</button>
+                            <button type="button" class="btn-dark" id="addTask">Add Task</button>
                         </div>
                     </div>
                     
@@ -110,9 +115,9 @@
     <div class="container-fluid" id="taskUI">
         <div class="row inputUiRow">
             <!-- Task List Start -->
-            <div class="col-md-4">
+            <div class="col-md-4" >
                 <ul class="list-group" id="listOfTasks">
-                  <li class="list-group-item listItemFormat">
+                  <!-- <li class="list-group-item listItemFormat">
                     <div class="container liContainer col-md-11">
                       <div class="card bg-light text-white listImgCard">
                         <img src="images\Task pipes.jpg" class="card-img listImages" id="overlay"  alt="...">
@@ -149,8 +154,8 @@
                           </div>
                         </div>
                       </div>                        
-                        
                     </li>
+
                     <li class="list-group-item listItemFormat">
                       <div class="container liContainer col-md-11">
                         <div class="card bg-light text-white listImgCard">
@@ -175,9 +180,21 @@
                         </div>
                       </div>
                     </div>                        
+                </li> -->
+                <!-- <li class="list-group-item listItemFormat">
+                  <div class="container liContainer col-md-11">
+                    <div class="card bg-light text-white listImgCard">
+                      <img src="images\Task image.png" class="card-img listImages" alt="...">
+                      <div class="card-img-overlay overlay">
+                        <h5 class="card-title">Task 2</h5>
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        <p class="card-text">Last updated 3 mins ago</p>
+                      </div>
+                    </div>
+                  </div>
                     
-                </li>
-                  </ul>  
+                </li> -->
+              </ul>  
             </div>
             <!-- List of Tasks End -->
             
@@ -192,6 +209,7 @@
     </div>
     <div class="row" id="taskPort">
       <div class="card taskCards outputCardFormat">
+        
         <img src="images\Task pipes.jpg" class="card-img outputImgCard" alt="...">
         <div class="card-header">
           Task Id
@@ -256,6 +274,7 @@
           <li class="list-group-item">Status</li>
         </ul>
       </div>
+      
 </div>
 
 <!-- Current Task Cards End -->

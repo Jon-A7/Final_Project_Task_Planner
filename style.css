@@ -23,6 +23,20 @@ html body{
     color: white;
 
 }
+
+.fa-clipboard-list{
+    color: white;
+    margin-right: 0.8rem;
+}
+
+#logo {
+    font-size: 1.9rem;
+}
+
+/* .fa-clipboard-list:hover{
+    color: #00909e;
+
+} */
 /* Navbar End */
 
 .mainHeaders {
@@ -59,6 +73,11 @@ html body{
 
 /* Icon Selector End */
 
+#updateCardButton {
+    
+}
+
+
 /* Add Task Form */
 
 
@@ -78,7 +97,28 @@ html body{
     padding: 4% 8% 4% 8%;
 }
 
-#mainForm > .form-row > .form-group > .form-control {
+#updateTask {
+    /* Add Task - Button customisation */
+    background-color: #00909e;
+    border: none;
+    padding: 4% 8% 4% 8%;
+}
+
+#deleteButton {
+    background-color: #27496d;
+    border: none;
+    padding: 4% 8% 4% 8%;
+}
+
+#updateCardButton {
+    background-color: #27496d;
+    border: none;
+    padding: 4% 8% 4% 8%;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+#mainForm .form-control {
     background-color: #0d1b38;
     color: #9ba4b4;
     border: none;
@@ -104,30 +144,29 @@ html body{
     
 }
 
-#listOfTasks > .listItemFormat {
+#listOfTasks .listItemFormat {
     background-color: #14274e;
     color: teal;
     
     
 }
 
-#listOfTasks > .listItemFormat > .listCardFormat {
-    /* background-color: b; */
+#listOfTasks .overlay {
+    background-color: rgba(0, 0, 0, 0.623);
 }
 
-.listImages {
-    /* width: 0.8rem;
-    height: 6rem; */
-}
-
-#listOfTasks > .listItemFormat > .liContainer > .listImgCard > .overlay {
-    background-color: rgba(0, 0, 0, 0.445);
-}
-
-#listOfTasks > .listItemFormat > .liContainer > .listImgCard {
+#listOfTasks .listImgCard {
     border: none;
 }
 /* Task List End */
+
+#listOfTasks .card-text {
+    font-size: 0.8rem;
+}
+
+#listOfTasks .card-title {
+    font-size: 1.2rem;
+}
 
 /* User Input Card */
 .inputUiRow {
@@ -141,6 +180,9 @@ html body{
     color: white;
 }
 
+.height {
+    height: 256px;
+}
 .cardInput {
     display: block;
     width: 100%;
@@ -157,13 +199,13 @@ html body{
     transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
     border: none;
 }
-#taskUI > .inputUiRow > .inputCard > .inputCardFormat {
+#taskUI .inputCardFormat {
     border: none;
     padding: 0.6rem;
     background-color: #14274e;
 }
 
-#taskUI > .inputUiRow > .inputCard > .inputCardFormat {
+#taskUI .inputCardFormat {
     border: none;
     padding: 0.6rem;
     background-color: #14274e;
@@ -191,26 +233,23 @@ html body{
     margin-bottom: 4rem;
     
 }
-#taskPort > .outputCardFormat > .card-header {
+#taskPort .card-header {
     background-color: #27496d;
     color: #ffffff;
-}
-
-#taskPort > .outputCardFormat > .list-group > li {
-    background-color: #335f8f;
-    color: #dae1e7;
-}
-
-#taskPort > .outputCardFormat > .list-group {
-    border-radius: 7px;
-}
-
-#taskPort > .outputCardFormat > .card-header {
     border-top-left-radius: 7px;
     border-top-right-radius: 7px;
 }
 
-#taskPort > .outputCardFormat {
+#taskPort li {
+    background-color: #335f8f;
+    color: #dae1e7;
+}
+
+#taskPort .list-group {
+    border-radius: 7px;
+}
+
+#taskPort .outputCardFormat {
     background-color: #14274e;
     
 }
@@ -232,3 +271,7 @@ html body{
     overflow:hidden;
   }
 /* Card Outputs End */
+
+
+/* .listImg img {
+    /* style */
