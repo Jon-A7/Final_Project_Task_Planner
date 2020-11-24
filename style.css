@@ -1,4 +1,277 @@
-html, body {
+html body{
+    width: 100%;
     height: 100%;
-    width: 100%;    
+    background-color: #0d1b38; 
 }
+
+#mainSection{
+    margin-bottom: 40px;
+}
+
+.taskCards {
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+/* Navbar customisation */
+.bg-custom {
+    background-color: #14274e;
+}
+
+.navbar-custom a {
+    text-decoration: none;
+    color: white;
+
+}
+
+.fa-clipboard-list{
+    color: white;
+    margin-right: 0.8rem;
+}
+
+#logo {
+    font-size: 1.9rem;
+}
+
+/* .fa-clipboard-list:hover{
+    color: #00909e;
+
+} */
+/* Navbar End */
+
+.mainHeaders {
+    justify-content: center;
+    margin-bottom: 0.7rem;
+    color: #00909e;
+}
+
+/* Jumbotron */
+
+.jumbotron > .container > .display-4 {
+    /* Jumbo Title Color */
+    color: #ffffff;
+}
+
+.jumbotron > .container > .lead {
+    /* Jumbo lead text Color */
+    color: #ffffff;
+}
+
+
+#jumbotronFluid {
+    background-color: transparent;
+    /* margin: 0;    */
+}
+
+/* Jumbotron End */
+
+/* Icon Selector Start */
+
+#icon1 {
+    background-image: url("images\Task pipes.jpg")
+}
+
+/* Icon Selector End */
+
+#updateCardButton {
+    
+}
+
+
+/* Add Task Form */
+
+
+#mainSection {
+    background-color: #14274e;
+    border-radius: 10px;
+    padding: 1.5rem;
+
+}
+#mainForm {
+    background-color: transparent;
+}
+#addTask {
+    /* Add Task - Button customisation */
+    background-color: #00909e;
+    border: none;
+    padding: 4% 8% 4% 8%;
+}
+
+#updateTask {
+    /* Add Task - Button customisation */
+    background-color: #00909e;
+    border: none;
+    padding: 4% 8% 4% 8%;
+}
+
+#deleteButton {
+    background-color: #27496d;
+    border: none;
+    padding: 4% 8% 4% 8%;
+}
+
+#updateCardButton {
+    background-color: #27496d;
+    border: none;
+    padding: 4% 8% 4% 8%;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+#mainForm .form-control {
+    background-color: #0d1b38;
+    color: #9ba4b4;
+    border: none;
+}
+
+.titleClass {
+    text-align: center;
+    margin-bottom: 2%;
+    font-size: 30px;
+    color: #00909e;    
+}
+
+.subheading {
+    /* Subheadings (within the form atm) */
+    color: #00909e;
+}
+/* Add Task Form End */
+
+/* Task List Start */
+#listOfTasks {
+    background-color: transparent;
+    list-style-type: none;
+    
+}
+
+#listOfTasks .listItemFormat {
+    background-color: #14274e;
+    color: teal;
+    
+    
+}
+
+#listOfTasks .overlay {
+    background-color: rgba(0, 0, 0, 0.623);
+}
+
+#listOfTasks .listImgCard {
+    border: none;
+}
+/* Task List End */
+
+#listOfTasks .card-text {
+    font-size: 0.8rem;
+}
+
+#listOfTasks .card-title {
+    font-size: 1.2rem;
+}
+
+/* User Input Card */
+.inputUiRow {
+    justify-content: center;
+    margin-bottom: 2%;
+}
+
+.cardCustomFit {
+    background-color: transparent;
+    border: none;
+    color: white;
+}
+
+.height {
+    height: 256px;
+}
+.cardInput {
+    display: block;
+    width: 100%;
+    height: calc(1.5em + 0.75rem + 2px);
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #9ba4b4;
+    background-clip: padding-box;
+    /* border: 1px solid #ced4da; */
+    border-radius: 0.25rem;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    border: none;
+}
+#taskUI .inputCardFormat {
+    border: none;
+    padding: 0.6rem;
+    background-color: #14274e;
+}
+
+#taskUI .inputCardFormat {
+    border: none;
+    padding: 0.6rem;
+    background-color: #14274e;
+}
+
+
+/* .card {
+    background-color: #dae1e7;
+} */
+
+/* Card Outputs */
+.outputCardFormat {
+    width: 18rem;
+    border: none;
+    padding: 0.6rem;
+    background-color: #27496d;
+    margin-bottom: 0.7rem;
+    margin-top: 0.4rem; 
+}
+
+
+
+#taskPort {
+    justify-content: center;
+    margin-bottom: 4rem;
+    
+}
+#taskPort .card-header {
+    background-color: #27496d;
+    color: #ffffff;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+}
+
+#taskPort li {
+    background-color: #335f8f;
+    color: #dae1e7;
+}
+
+#taskPort .list-group {
+    border-radius: 7px;
+}
+
+#taskPort .outputCardFormat {
+    background-color: #14274e;
+    
+}
+
+.outputImgCard {
+    margin-bottom: 0.4rem;
+}
+
+/* Card Outputs End */
+.overlay-effect {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: rgba(259, 67, 95, 0.7);
+    overflow:hidden;
+  }
+/* Card Outputs End */
+
+
+/* .listImg img {
+    /* style */

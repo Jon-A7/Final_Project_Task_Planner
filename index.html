@@ -62,6 +62,293 @@
       
       
 
+    
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <!-- FontAwesome Link -->
+    <script src="https://kit.fontawesome.com/af78987f90.js" crossorigin="anonymous"></script>
+    <title>Task Planner</title>
+  </head>
+  <!-- Nav Bar Start -->
+  <nav class="navbar navbar-expand-lg navbar-custom bg-custom navbar-dark">
+    <i class="fas fa-clipboard-list fa-3x"></i>
+    <a class="navbar-brand" id="logo" href="#">Task Planner</a>
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <!-- <ul class="navbar-nav">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Features</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Pricing</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+        </li>
+      </ul> -->
+    </div>
+  </nav>
+  <!-- Nav Bar End -->
+  <body>
+      <!-- <div class="container-fluid" id="head"> -->
+          <div class="jumbotron jumbotron-fluid" id="jumbotronFluid">
+                <div class="container">
+                  <h1 class="display-4">Planner</h1>
+                  <p class="lead"></p>
+                </div>
+              </div>
+          <!-- </div> -->
+    <!-- Task Form Start -->
+    <div class="container col-lg-10 col-md-8 col-sm-8 col-xs-1" id="mainSection">
+        <div class="row" id="formTitle">
+            <h3 class="titleClass form-group" id="">Enter your task</h3>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <form name="inputForm" id="mainForm" class=".">
+                    <div class="form-row">
+                      <div class="form-group col-md-7">
+                        <!-- <label for="inputIcon" class="subheading">Icon</label> -->
+                            <!-- <select name="inputIcon" class="form-control" id="inputIcon">
+                                <option value ="icon1" id ="icon1">Icon 1</option>
+                                <option value ="icon2" id ="icon2">Icon 2</option>
+                                <option value ="icon3" id ="icon3">Icon 3</option>
+                                <option value ="icon4" id ="icon4">Icon 4</option>
+                                <option value ="icon5" id ="icon5">Icon 5</option>
+                                <option value ="icon6" id ="icon6">Icon 6</option>
+                                <option value ="icon7" id ="icon7">Icon 7</option>
+                                <option value ="icon8" id ="icon8">Icon 8</option>
+                              </select> -->
+                    </div>
+                        <div class="form-group col-md-7">
+                            <label for="inputName" class="subheading">Name</label>
+                            <input type="text" class="form-control" name ="inputName" id="inputName" placeholder="Enter name">
+                        </div>
+                        <div class="form-group col-md-7">
+                            <label for="inputDescription" class="subheading">Description</label>
+                            <textarea class="form-control" id="inputDescription" rows="3"  placeholder="Describe your task"></textarea>
+                        </div>
+                        <div class="form-group col-md-7">
+                            <label for="assignedTo" class="subheading">Assigned To</label>
+                            <input type="text" class="form-control" id="assignedTo" placeholder="Joe Bloggs">
+                        </div>
+                        <div class="form-group col-md-7">
+                            <label for="dueDate" class="subheading">Date Due</label>
+                            <input type="date" class="form-control" id="dueDate">
+                        </div>
+                        <div class="form-group col-md-7">
+                            <label for="status" class="subheading">Status</label>
+                            <select name="status" class="form-control" id="status">
+                                <option value="To Do">TODO</option>
+                                <option value="In Progress">IN PROGRESS</option>
+                                <option value="Review">REVIEW</option>
+                                <option value="Done">DONE</option>
+                              </select>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="col-3" id="addTaskBtn">
+                            <button type="button" class="btn-dark" id="addTask">Add Task</button>
+                        </div>
+                    </div>
+                    
+                </form>
+            </div>
+            <!-- <div class="col-md-4 border border-dark" id="formOutput">
+                <p></p>
+                <p></p>
+                <p></p>
+            </div> -->
+        </div>
+    </div>
+    <!-- Task Form End -->
+    
+    <div class="container-fluid" id="taskUI">
+        <div class="row inputUiRow">
+            <!-- Task List Start -->
+            <div class="col-md-4" >
+                <ul class="list-group" id="listOfTasks">
+                  <!-- <li class="list-group-item listItemFormat">
+                    <div class="container liContainer col-md-11">
+                      <div class="card bg-light text-white listImgCard">
+                        <img src="images\Task pipes.jpg" class="card-img listImages" id="overlay"  alt="...">
+                        <div class="card-img-overlay overlay" >
+                          <h5 class="card-title">Task 1</h5>
+                          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                          <p class="card-text">Last updated 3 mins ago</p>
+                        </div>
+                      </div>
+                    </div>                        
+                    
+                </li>
+                    <li class="list-group-item listItemFormat">
+                      <div class="container liContainer col-md-11">
+                        <div class="card bg-light text-white listImgCard">
+                          <img src="images\Task image.png" class="card-img listImages" alt="...">
+                          <div class="card-img-overlay overlay">
+                            <h5 class="card-title">Task 2</h5>
+                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                            <p class="card-text">Last updated 3 mins ago</p>
+                          </div>
+                        </div>
+                      </div>
+                        
+                    </li>
+                    <li class="list-group-item listItemFormat">
+                      <div class="container liContainer col-md-11">
+                        <div class="card bg-light text-white listImgCard">
+                          <img src="images\Task image two.png" class="card-img listImages" id="overlay"  alt="...">
+                          <div class="card-img-overlay overlay" >
+                            <h5 class="card-title">Task 3</h5>
+                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                            <p class="card-text">Last updated 3 mins ago</p>
+                          </div>
+                        </div>
+                      </div>                        
+                    </li>
+
+                    <li class="list-group-item listItemFormat">
+                      <div class="container liContainer col-md-11">
+                        <div class="card bg-light text-white listImgCard">
+                          <img src="images\task-management-hero-banner.png" class="card-img listImages" id="overlay"  alt="...">
+                          <div class="card-img-overlay overlay" >
+                            <h5 class="card-title">Task 4</h5>
+                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                            <p class="card-text">Last updated 3 mins ago</p>
+                          </div>
+                        </div>
+                      </div>                        
+                      
+                  </li>
+                  <li class="list-group-item listItemFormat ">
+                    <div class="container liContainer col-md-11">
+                      <div class="card bg-light text-white listImgCard">
+                        <img src="images\What-is-task-management.jpg" class="card-img listImages" id="overlay"  alt="...">
+                        <div class="card-img-overlay overlay" >
+                          <h5 class="card-title">Task 5</h5>
+                          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                          <p class="card-text">Last updated 3 mins ago</p>
+                        </div>
+                      </div>
+                    </div>                        
+                </li> -->
+                <!-- <li class="list-group-item listItemFormat">
+                  <div class="container liContainer col-md-11">
+                    <div class="card bg-light text-white listImgCard">
+                      <img src="images\Task image.png" class="card-img listImages" alt="...">
+                      <div class="card-img-overlay overlay">
+                        <h5 class="card-title">Task 2</h5>
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        <p class="card-text">Last updated 3 mins ago</p>
+                      </div>
+                    </div>
+                  </div>
+                    
+                </li> -->
+              </ul>  
+            </div>
+            <!-- List of Tasks End -->
+            
+        </div>
+
+
+
+
+        <!-- All current Task Cards -->
+    <div class="row mainHeaders" id="currentTaskHeader">
+      <p class="h3">Current Tasks</p>
+    </div>
+    <div class="row" id="taskPort">
+      <div class="card taskCards outputCardFormat">
+        
+        <img src="images\Task pipes.jpg" class="card-img outputImgCard" alt="...">
+        <div class="card-header">
+          Task Id
+        </div>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">Name</li>
+          <li class="list-group-item">Description</li>
+          <li class="list-group-item">Assign To</li>
+          <li class="list-group-item">Date due</li>
+          <li class="list-group-item">Status</li>
+        </ul>
+      </div>
+  <div class="card taskCards outputCardFormat">
+        <img src="images\Task image.png" class="card-img outputImgCard" alt="...">
+        <div class="card-header">
+          Task Id
+        </div>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">Name</li>
+          <li class="list-group-item">Description</li>
+          <li class="list-group-item">Assign To</li>
+          <li class="list-group-item">Date due</li>
+          <li class="list-group-item">Status</li>
+        </ul>
+      </div>
+      <div class="card taskCards outputCardFormat">
+        <img src="images\Task image two.png" class="card-img outputImgCard" alt="...">
+        <div class="card-header">
+          Task Id
+        </div>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">Name</li>
+          <li class="list-group-item">Description</li>
+          <li class="list-group-item">Assign To</li>
+          <li class="list-group-item">Date due</li>
+          <li class="list-group-item">Status</li>
+        </ul>
+      </div>
+      <div class="card taskCards outputCardFormat">
+        <img src="images\task-management-hero-banner.png" class="card-img outputImgCard" alt="...">
+        <div class="card-header">
+          Task Id
+        </div>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">Name</li>
+          <li class="list-group-item">Description</li>
+          <li class="list-group-item">Assign To</li>
+          <li class="list-group-item">Date due</li>
+          <li class="list-group-item">Status</li>
+        </ul>
+      </div>
+      <div class="card taskCards outputCardFormat">
+        <img src="images\What-is-task-management.jpg" class="card-img outputImgCard" alt="...">
+        <div class="card-header">
+          Task Id
+        </div>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">Name</li>
+          <li class="list-group-item">Description</li>
+          <li class="list-group-item">Assign To</li>
+          <li class="list-group-item">Date due</li>
+          <li class="list-group-item">Status</li>
+        </ul>
+      </div>
+      
+</div>
+
+<!-- Current Task Cards End -->
+
+       
+          
+      
+
+    </div>
+    
+   
+ 
+
+
+
+
 
 
 
@@ -80,8 +367,50 @@
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="app.js"></script>
+    <script src ="app.js"></script>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
   </body>
 </html>
+</html>
+
+C:\Users\JBIAh\Documents\Generation Tech Talent\Planner App\plannerApp\app.js
+<!-- Card one Start-->
+<!-- <div class="col-md-3 col-sm-8 inputCard">
+                
+</div> -->
+                <!-- <div class="card cardCustomFit inputCardFormat">
+                    <img src="images\Task image.png" class="card-img-top" alt="task image">
+                    <div class="card-body cardCustomFit">
+                      <h5 class="card-title">Task Planner Card 1</h5>
+                    </div>
+                    <div class="card-body cardCustomFit">
+                        <h6 class="card-title">Name</h6>
+                        <input type="text"  class="card-text cardInput cardName" placeholder="Name">
+                    </div>
+                    <div class="card-body cardCustomFit">
+                        <h6 class="card-title">Description</h6>
+                        <textarea class="card-text cardInput cardDesc"  rows="2" ></textarea>
+                    </div>
+                    
+                    <div class="card-body cardCustomFit">
+                        <h6 class="card-title">Assigned To</h6>
+                        <textarea class="card-text cardInput cardAssigned" rows="2" ></textarea>
+                    </div>
+                    <div class="card-body cardCustomFit">
+                        <h6 class="card-title">Date due</h6>
+                        <input type="date"  class="card-text cardInput cardDate">
+                    </div>
+                    <div class="card-body cardCustomFit">
+                        <h6 class="card-title ">Status</h6>
+                        <select name="status" class="card-text cardInput cardStatus ">
+                            <option value="todo">TODO</option>
+                            <option value="inProgress">IN PROGRESS</option>
+                            <option value="review">REVIEW</option>
+                            <option value="done">DONE</option>
+                          </select>
+                    </div>
+                  </div> -->
+                  <!-- Card One End -->
