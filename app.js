@@ -1,11 +1,3 @@
-//Container
-    //Header
-    //Content
-        //List
-        //Add item
-
-const clear = document.querySelector (".clear");
-const datel
 //  When data is entered, run function that checks to see if inputs are valid
 
 function validateTaskForm (inputName, inputDesc, inputAssignedTo, inputDate, inputStatus) {
@@ -273,8 +265,6 @@ function populateFromMem(memoryArray) {
         myTaskManager.addTaskCard(memoryArray[i]);
     }
 }
-
-
 
 
 
